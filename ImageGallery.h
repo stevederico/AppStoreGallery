@@ -14,6 +14,5 @@
 @property (nonatomic, retain) NSArray *images;
 @property (nonatomic, retain) UIActivityIndicatorView *spinner;
 - (id)initWithImages:(NSArray*)images;
-- (void)handleImages;
-+ (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
+
 @end

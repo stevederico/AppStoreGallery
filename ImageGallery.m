@@ -8,9 +8,16 @@
 
 #import "ImageGallery.h"
 
+@interface  ImageGallery(PrivateMethods)
+- (void)handleImages;
++ (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
+@end
+
+
 @implementation ImageGallery
 @synthesize pageControl = _pageControl, scrollView = _scrollView,images = _images;
 @synthesize spinner = _spinner;
+
 
 - (void)dealloc {
    
@@ -26,8 +33,8 @@
     self = [super initWithFrame:CGRectMake(10, 10, 300, 325)];
     if (self) {
         
-        [self setBackgroundColor:[UIColor greenColor]];
         self.images = images;
+        
         UIPageControl *pc = [[UIPageControl alloc] initWithFrame:CGRectMake(50, 280, 200, 25)];
         self.pageControl= pc;
         [pc release];
@@ -38,7 +45,7 @@
         self.scrollView.clipsToBounds = YES;
         self.scrollView.scrollEnabled = YES;
         self.scrollView.pagingEnabled = YES;
-        [self.scrollView setBackgroundColor:[UIColor redColor]];
+        [self.scrollView setBackgroundColor:[UIColor blackColor]];
         [self.scrollView setCanCancelContentTouches:NO];
         self.scrollView.delegate = self;
         [sc release];
@@ -83,17 +90,18 @@
         UIImageView *imageScrollView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 300, 325)];
         image = [ImageGallery imageWithImage:image scaledToSize:CGSizeMake(300, 325)];
         [imageScrollView setImage:image];
-            CGRect rect = imageScrollView.frame;
-            
-            rect.origin.x = ((self.scrollView.frame.size.width - image.size.width) / 2) + cx;
-            rect.origin.y = ((self.scrollView.frame.size.height - image.size.height) / 2);
-            
-            imageScrollView.frame = rect;
-            
-            [self.scrollView addSubview:imageScrollView];
-            [imageScrollView release];
-            
-            cx += self.scrollView.frame.size.width;
+        
+        CGRect rect = imageScrollView.frame;
+        
+        rect.origin.x = ((self.scrollView.frame.size.width - image.size.width) / 2) + cx;
+        rect.origin.y = ((self.scrollView.frame.size.height - image.size.height) / 2);
+        
+        imageScrollView.frame = rect;
+        
+        [self.scrollView addSubview:imageScrollView];
+        [imageScrollView release];
+        
+        cx += self.scrollView.frame.size.width;
         
     }
     
