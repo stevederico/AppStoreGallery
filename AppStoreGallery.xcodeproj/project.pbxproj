@@ -14,7 +14,10 @@
 		7BC0DA191499367A00809767 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC0DA181499367A00809767 /* main.m */; };
 		7BC0DA1D1499367A00809767 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC0DA1C1499367A00809767 /* AppDelegate.m */; };
 		7BC0DA201499367A00809767 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC0DA1F1499367A00809767 /* ViewController.m */; };
-		7BC0DA231499367A00809767 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC0DA211499367A00809767 /* ViewController.xib */; };
+		7BC0DA2E149946D500809767 /* ImageGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC0DA2C149946D500809767 /* ImageGallery.m */; };
+		7BC0DA361499490000809767 /* sf3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BC0DA331499490000809767 /* sf3.jpg */; };
+		7BC0DA371499490000809767 /* sf1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BC0DA341499490000809767 /* sf1.jpg */; };
+		7BC0DA381499490000809767 /* sf2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BC0DA351499490000809767 /* sf2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,19 @@
 		7BC0DA0C1499367A00809767 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7BC0DA0E1499367A00809767 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7BC0DA101499367A00809767 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7BC0DA141499367A00809767 /* AppStoreGallery-Info.plist */ = {isa = PBXFileReference; path = "AppStoreGallery-Info.plist"; sourceTree = "<group>"; };
+		7BC0DA141499367A00809767 /* AppStoreGallery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppStoreGallery-Info.plist"; sourceTree = "<group>"; };
 		7BC0DA161499367A00809767 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7BC0DA181499367A00809767 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7BC0DA1A1499367A00809767 /* AppStoreGallery-Prefix.pch */ = {isa = PBXFileReference; path = "AppStoreGallery-Prefix.pch"; sourceTree = "<group>"; };
-		7BC0DA1B1499367A00809767 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		7BC0DA1A1499367A00809767 /* AppStoreGallery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppStoreGallery-Prefix.pch"; sourceTree = "<group>"; };
+		7BC0DA1B1499367A00809767 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7BC0DA1C1499367A00809767 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7BC0DA1E1499367A00809767 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		7BC0DA1E1499367A00809767 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7BC0DA1F1499367A00809767 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7BC0DA221499367A00809767 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		7BC0DA2C149946D500809767 /* ImageGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageGallery.m; path = ../ImageGallery.m; sourceTree = "<group>"; };
+		7BC0DA2D149946D500809767 /* ImageGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageGallery.h; path = ../ImageGallery.h; sourceTree = "<group>"; };
+		7BC0DA331499490000809767 /* sf3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sf3.jpg; sourceTree = "<group>"; };
+		7BC0DA341499490000809767 /* sf1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sf1.jpg; sourceTree = "<group>"; };
+		7BC0DA351499490000809767 /* sf2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sf2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +86,10 @@
 			children = (
 				7BC0DA1B1499367A00809767 /* AppDelegate.h */,
 				7BC0DA1C1499367A00809767 /* AppDelegate.m */,
-				7BC0DA1E1499367A00809767 /* ViewController.h */,
-				7BC0DA1F1499367A00809767 /* ViewController.m */,
-				7BC0DA211499367A00809767 /* ViewController.xib */,
+				7BC0DA321499470800809767 /* Controller */,
+				7BC0DA311499470500809767 /* View */,
+				7BC0DA30149946FE00809767 /* Model */,
+				7BC0DA2F149946DE00809767 /* Gallery */,
 				7BC0DA131499367A00809767 /* Supporting Files */,
 			);
 			path = AppStoreGallery;
@@ -90,12 +98,55 @@
 		7BC0DA131499367A00809767 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7BC0DA391499490200809767 /* Images */,
 				7BC0DA141499367A00809767 /* AppStoreGallery-Info.plist */,
 				7BC0DA151499367A00809767 /* InfoPlist.strings */,
 				7BC0DA181499367A00809767 /* main.m */,
 				7BC0DA1A1499367A00809767 /* AppStoreGallery-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BC0DA2F149946DE00809767 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				7BC0DA2D149946D500809767 /* ImageGallery.h */,
+				7BC0DA2C149946D500809767 /* ImageGallery.m */,
+			);
+			name = Gallery;
+			sourceTree = "<group>";
+		};
+		7BC0DA30149946FE00809767 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7BC0DA311499470500809767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7BC0DA321499470800809767 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7BC0DA1E1499367A00809767 /* ViewController.h */,
+				7BC0DA1F1499367A00809767 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7BC0DA391499490200809767 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7BC0DA331499490000809767 /* sf3.jpg */,
+				7BC0DA341499490000809767 /* sf1.jpg */,
+				7BC0DA351499490000809767 /* sf2.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BC0DA171499367A00809767 /* InfoPlist.strings in Resources */,
-				7BC0DA231499367A00809767 /* ViewController.xib in Resources */,
+				7BC0DA361499490000809767 /* sf3.jpg in Resources */,
+				7BC0DA371499490000809767 /* sf1.jpg in Resources */,
+				7BC0DA381499490000809767 /* sf2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +217,7 @@
 				7BC0DA191499367A00809767 /* main.m in Sources */,
 				7BC0DA1D1499367A00809767 /* AppDelegate.m in Sources */,
 				7BC0DA201499367A00809767 /* ViewController.m in Sources */,
+				7BC0DA2E149946D500809767 /* ImageGallery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,14 +230,6 @@
 				7BC0DA161499367A00809767 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7BC0DA211499367A00809767 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7BC0DA221499367A00809767 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -273,6 +319,7 @@
 				7BC0DA281499367A00809767 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
